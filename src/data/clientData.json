@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Audrey Alexander",
+        "role": "Team lead at Google",
+        "imgSrc": "/assets/images/icon/client-img.png"
+    },
+    {
+        "id": 2,
+        "name": "Audrey Alexander",
+        "role": "Team lead at Google",
+        "imgSrc": "/assets/images/icon/client-img.png"
+    },
+    {
+        "id": 3,
+        "name": "Audrey Alexander",
+        "role": "Team lead at Google",
+        "imgSrc": "/assets/images/icon/client-img.png"
+    },
+    {
+        "id": 4,
+        "name": "Audrey Alexander",
+        "role": "Team lead at Google",
+        "imgSrc": "/assets/images/icon/client-img.png"
+    },
+    {
+        "id": 5,
+        "name": "Audrey Alexander",
+        "role": "Team lead at Google",
+        "imgSrc": "/assets/images/icon/client-img.png"
+    },
+    {
+        "id": 6,
+        "name": "Audrey Alexander",
+        "role": "Team lead at Google",
+        "imgSrc": "/assets/images/icon/client-img.png"
+    }
+]

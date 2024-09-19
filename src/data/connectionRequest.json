@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Brandon Wilson",
+        "role": "Senior UX designer",
+        "totalConnections":"623 connections",
+        "imgSrc": "/assets/images/icon/request1.png",
+        "description":"Hey, I saw your works. I like it! Can we do something together? Or maybe you have project for UX at the moment?"
+    },
+    {
+        "id": 2,
+        "name": "Theresa Steward",
+        "role": "iOS developer",
+        "totalConnections":"481 connections",
+        "imgSrc": "/assets/images/icon/request2.png",
+        "description":""
+    }
+]

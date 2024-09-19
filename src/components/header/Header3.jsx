@@ -238,6 +238,11 @@ function Header3() {
                     </Link>
                   </li>
                   <li>
+                    <Link legacyBehavior href="/consultant/consultant-dashboard">
+                      <a>Consultant Dashboard</a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link legacyBehavior href="/job-post">
                       <a>Post A Jobs</a>
                     </Link>
