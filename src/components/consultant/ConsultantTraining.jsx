@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import BasicInformation from "./BasicInformation";
 import AdvanceInformation from "./AdvanceInformation";
@@ -15,12 +14,12 @@ function ConsultantTraining() {
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link active"
-                id="home-tab"
+                id="basic-info-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#home"
+                data-bs-target="#basic-info"
                 type="button"
                 role="tab"
-                aria-controls="home"
+                aria-controls="basic-info"
                 aria-selected="true"
               >
                 <span />
@@ -31,12 +30,12 @@ function ConsultantTraining() {
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link"
-                id="profile-tab"
+                id="advance-info-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#profile"
+                data-bs-target="#advance-info"
                 type="button"
                 role="tab"
-                aria-controls="profile"
+                aria-controls="advance-info"
                 aria-selected="false"
               >
                 <span />
@@ -47,12 +46,12 @@ function ConsultantTraining() {
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link"
-                id="contact-tab"
+                id="curriculum-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#contact"
+                data-bs-target="#curriculum"
                 type="button"
                 role="tab"
-                aria-controls="contact"
+                aria-controls="curriculum"
                 aria-selected="false"
               >
                 <span />
@@ -64,25 +63,25 @@ function ConsultantTraining() {
           <div className="tab-content" id="myTabContent">
             <div
               className="tab-pane fade show active"
-              id="home"
+              id="basic-info"
               role="tabpanel"
-              aria-labelledby="home-tab"
+              aria-labelledby="basic-info-tab"
             >
               <BasicInformation/>
             </div>
             <div
               className="tab-pane fade"
-              id="profile"
+              id="advance-info"
               role="tabpanel"
-              aria-labelledby="profile-tab"
+              aria-labelledby="advance-info-tab"
             >
               <AdvanceInformation/>
             </div>
             <div
               className="tab-pane fade"
-              id="contact"
+              id="curriculum"
               role="tabpanel"
-              aria-labelledby="contact-tab"
+              aria-labelledby="curriculum-tab"
             >
               <Curriculum/>
             </div>

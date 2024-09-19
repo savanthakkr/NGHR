@@ -2,7 +2,7 @@ import React from "react";
 import ConsultantLayout from "../../layout/ConsultantLayout";
 import ConsultantTraining from "../../components/consultant/ConsultantTraining";
 
-function DashboardPage() {
+function Training() {
     return (
         <ConsultantLayout>
             <ConsultantTraining/>
@@ -10,4 +10,4 @@ function DashboardPage() {
     );
 }
 
-export default DashboardPage;
+export default Training;

@@ -50,11 +50,11 @@ function ConsultantMenu() {
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/">
+                <Link legacyBehavior href="/consultant/clients">
                   <a
                     className={
                       `justify-center ${ 
-                      currentPath === "/" ? "active" : "" }`
+                      currentPath === "/consultant/clients" ? "active" : "" }`
                     }
                   >
                     Clients

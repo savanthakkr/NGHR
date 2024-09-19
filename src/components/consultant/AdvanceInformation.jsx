@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import { Editor } from "@tinymce/tinymce-react";
 import "react-quill/dist/quill.snow.css";
 
 function AdvanceInformation() {
