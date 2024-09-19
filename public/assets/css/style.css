@@ -24458,3 +24458,12 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   height: 40px;
   border-radius: 50%;
 }
+
+@media(max-width:992px){
+  .chat-view .chat-head {
+    border-bottom: 2px solid #F4F4F4;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction:column;
+  }
+}
