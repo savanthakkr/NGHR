@@ -1,16 +1,17 @@
 import React from "react";
 import ConsultantClientReceived from "./ConsultantClientReceived";
+import ConsultantChat from "./ConsultantChat";
 
 function ConsultantClient() {
     return (
         <div className="col-lg-12">
-            <div classname="consultant-clients">
+            <div className="consultant-clients">
                 <div className="title">
                     <h5>Clients</h5>
                 </div>
             </div>
-            <div classname="col-12">
-                <div classname="client-tabs">
+            <div className="col-12">
+                <div className="client-tabs">
                     <div className="form-wrapper">
                         <ul className="nav nav-tabs" id="myTab" role="tablist">
                             <li className="nav-item" role="presentation">
@@ -59,7 +60,7 @@ function ConsultantClient() {
                                 role="tabpanel"
                                 aria-labelledby="sent-tab"
                             >
-                                Sent
+                                <ConsultantChat/>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,6 @@ function Clients() {
     return (
         <ConsultantLayout>
             <ConsultantClient/>
-            <ConsultantChat/>
         </ConsultantLayout>
     );
 }
