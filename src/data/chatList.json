@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Darlene Black",
+        "chat": "Hey, how is your project?",
+        "imgSrc": "/assets/images/icon/chat1.png"
+    },
+    {
+        "id": 2,
+        "name": "Theresa Steward",
+        "chat": "Hi, Dmitry! I have a work for you. We",
+        "imgSrc": "/assets/images/icon/chat2.png"
+    },
+    {
+        "id": 3,
+        "name": "Brandon Wilson",
+        "chat": "I am Russian and I am learning Engl",
+        "imgSrc": "/assets/images/icon/chat3.png"
+    },
+    {
+        "id": 4,
+        "name": "Kyle Fisher",
+        "chat": "So, It’s up to you!",
+        "imgSrc": "/assets/images/icon/chat4.png"
+    },
+    {
+        "id": 5,
+        "name": "Audrey Alexander",
+        "chat": "When you got it?",
+        "imgSrc": "/assets/images/icon/chat5.png"
+    },
+    {
+        "id": 6,
+        "name": "Design Conference",
+        "chat": "Can you guys help me with it?",
+        "imgSrc": "/assets/images/icon/groupChat.png"
+    }
+]

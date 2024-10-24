@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Audrey Alexander",
+        "role": "Team lead at Google",
+        "imgSrc": "/assets/images/icon/client-img.png"
+    },
+    {
+        "id": 2,
+        "name": "Kyle Fisher",
+        "role": "Product designer at Commandor Corp",
+        "imgSrc": "/assets/images/icon/connection2.png"
+    },
+    {
+        "id": 3,
+        "name": "Darlene Black",
+        "role": "HR-manager, 10 000 connections",
+        "imgSrc": "/assets/images/icon/connection3.png"
+    },
+    {
+        "id": 4,
+        "name": "Eduardo Russell",
+        "role": "Full stack developer at Yandex",
+        "imgSrc": "/assets/images/icon/connection4.png"
+    }
+]
