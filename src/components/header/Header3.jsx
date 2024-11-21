@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useReducer, useRef } from "react";
+
 const initialState = {
   activeMenu: "",
   menuOpen: false,
@@ -37,6 +38,7 @@ function reducer(state, action) {
   }
 }
 function Header3() {
+  const router = useRouter();
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
   const handleScroll = () => {
@@ -69,7 +71,7 @@ function Header3() {
 
   return (
     <>
-      <div className="top-bar2">
+      {/* <div className="top-bar2">
         <p>
           Welcome Our Job Portal!{" "}
           <Link legacyBehavior href="/candidates-dashboard/bookmark">
@@ -120,7 +122,7 @@ function Header3() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       <header
         ref={headerRef}
         className={
@@ -129,9 +131,9 @@ function Header3() {
             : "header-area style-3"
         }
       >
-        <div className="menu-area">
+        <div className={router.pathname === '/home' ? 'menu-area menu-area1' : 'menu-area'}>
           <div className="header-logo">
-            <Link legacyBehavior href="/">
+            <Link legacyBehavior href="/home">
               <a>
                 <img
                   alt="image"
@@ -155,7 +157,7 @@ function Header3() {
               </div>
             </div>
             <ul className="menu-list">
-              <li className="menu-item-has-children active">
+              {/* <li className="menu-item-has-children active">
                 <a href="#" className="drop-down">
                   Home
                 </a>
@@ -175,8 +177,8 @@ function Header3() {
                   }
                 >
                 </ul>
-              </li>
-              <li className="menu-item-has-children">
+              </li> */}
+              {/* <li className="menu-item-has-children">
                 <a href="#" className="drop-down">
                   Find Jobs
                 </a>
@@ -192,7 +194,7 @@ function Header3() {
                   className={
                     state.activeMenu === "job-list"
                       ? "sub-menu d-block"
-                      : "sub-menu"
+                      : "sub-menu d-block"
                   }
                 >
                   <li>
@@ -212,7 +214,9 @@ function Header3() {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
+              {/*
+
               <li className="menu-item-has-children">
                 <a href="#" className="drop-down">
                   Pages
@@ -346,6 +350,21 @@ function Header3() {
                 <Link legacyBehavior href="/contact">
                   <a>Contact</a>
                 </Link>
+              </li> */}
+              <li>
+                <Link legacyBehavior href="/home">
+                  <a>Jobs</a>
+                </Link>
+              </li>
+              <li>
+                <Link legacyBehavior href="/home">
+                  <a>Companies</a>
+                </Link>
+              </li>
+              <li>
+                <Link legacyBehavior href="/home">
+                  <a>Consultancy</a>
+                </Link>
               </li>
             </ul>
             <div className="for-mobile-menu d-lg-none d-block">
@@ -409,6 +428,60 @@ function Header3() {
           <div className="nav-right d-flex jsutify-content-end align-items-center">
             <ul>
               <li>
+                <Link legacyBehavior href="/">
+                  <a>Login</a>
+                </Link>
+              </li>
+              <li className="d-md-flex d-none">
+                <div className="sign-in-btn">
+                  <Link legacyBehavior href="/">
+                    <a className="primry-btn-1 primary-btn lg-btn">
+                      Sign Up
+                    </a>
+                  </Link>
+                </div>
+              </li>
+            </ul>
+            <div className="main-menu">
+              <ul className="d-block">
+                <li className="menu-item-has-children">
+                  <a href="#" className="drop-down">
+                    Job Seeker
+                  </a>
+                  <i
+                    className={
+                      state.activeMenu === "job-list"
+                        ? "bi bi-dash active dropdown-icon"
+                        : "bi bi-plus dropdown-icon"
+                    }
+                    onClick={() => handleMenu("job-list")}
+                  />
+                  <ul
+                    className={
+                      state.activeMenu === "job-list"
+                        ? "sub-menu d-block"
+                        : "sub-menu d-block"
+                    }
+                  >
+                    <li>
+                      <Link legacyBehavior href="/category">
+                        <a>Job Category</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link legacyBehavior href="/job-listing1">
+                        <a>Job Listing</a>
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link legacyBehavior href="/job-details">
+                        <a>Job Details</a>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* <li>
                 <div className="btn-group dropdown">
                   <div
                     className="notifications-area dropdown-toggle"
@@ -534,12 +607,15 @@ function Header3() {
                     </a>
                   </Link>
                 </div>
-              </li>
-            </ul>
+              </li> */}
+              </ul>
+            </div>
+
             <div className="sidebar-button mobile-menu-btn ">
               <i className="bi bi-list" />
             </div>
           </div>
+
         </div>
       </header>
     </>
