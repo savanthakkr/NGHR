@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
-import Footer from "../components/footer/Footer";
 import Header3 from "../components/header/Header3";
+import Footer2 from "../components/footer/Footer2";
 
 function Layout({ children }) {
   return (
@@ -24,7 +24,7 @@ function Layout({ children }) {
       </Head>
       <Header3 />
       {children}
-      <Footer />
+      <Footer2 />
     </>
   );
 }
